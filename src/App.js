@@ -1,21 +1,28 @@
 import React from 'react';
-import Navigation from './components/Navigation'
-import {Route} from 'react-router-dom'
+import  NavigationBar  from './components/NavigationBar'
+import CardDropDown from './components/Form'
+import MainCard from './components/Card'
+import SecondCard from './components/SecondCard'
+// import { Button } from 'reactstrap';
+// import {Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="">
       <header> 
-        <Navigation />
+        <NavigationBar />
+        <CardDropDown />
       </header>
       <body>
+        <MainCard />
+        <SecondCard />
       </body>
       <footer>
       </footer>
 
-      <div>
+      {/* <div>
         <Route exact path="/" component={App}/>
-      </div>
+      </div> */}
     </div>
   );
 }
