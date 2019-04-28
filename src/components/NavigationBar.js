@@ -21,7 +21,7 @@ const style = {
   },
 
   menuBar: {
-    marginRight: "450px"
+    marginRight: "350px"
   },
 
   menuToggle: {
@@ -61,7 +61,10 @@ class NavigationBar extends React.Component {
               <NavLink href="/components/">Plan a journey</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Fare</NavLink>
+              <NavLink href="https://github.com/reactstrap/reactstrap">Buy tickets</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" to="/Login">Login</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

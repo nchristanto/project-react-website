@@ -1,17 +1,18 @@
 import React from 'react';
 import NavigationBar  from './components/NavigationBar'
-import CardDropDown from './components/Form'
+import Cover from './components/Cover'
 import MainCard from './components/Card'
 import SecondCard from './components/SecondCard'
-// import { Button } from 'reactstrap';
-// import {Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+// import Login from "./pages/Login"
 
 function App() {
   return (
-    <div className="">
+    <div>
       <header> 
+
         <NavigationBar />
-        <CardDropDown />
+        <Cover />
       </header>
       <body>
         <MainCard />

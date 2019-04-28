@@ -1,5 +1,16 @@
 import React from 'react';
-import { Button, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem , Card, CardBody, CardHeader, CardTitle, CardText, CardImg } from 'reactstrap';
+import { 
+  Button, 
+  Nav, 
+  NavItem,
+  Input,  
+  NavLink, 
+  Card, 
+  CardBody, 
+  CardHeader, 
+  CardTitle, 
+  CardText, 
+  CardImg } from 'reactstrap';
 // import { ListGroup, ListGroupItem } from 'reactstrap';
 
 const style = {
@@ -8,17 +19,35 @@ const style = {
   justifyContent: "space-around",
   padding: "40px 40px"
   },
+
   formContainer: {
-    width: "275px",
+    width: "300px",
+  },
+
+  // inputForm: {
+  //   justifyContent: "center" 
+  // },
+
+  inputContainer: {
+    justifyContent: "center"
+  },
+
+  inputButton: {
+    width: "258px"
+  },
+
+  navContainer: {
+    justifyContent: "center"
   }
 }
 
 const MainCard = (props) => {
   return (
   <div style={style.cardContainer}>
-      <Card style={style.formContainer} className="DropDownContainer">
+    <div>
+      <Card style={style.formContainer}>
         <CardHeader><center><h5>Plan a journey</h5></center></CardHeader>
-        <Nav tabs>
+        <Nav tabs style={style.navContainer}>
           <NavItem>
             <NavLink href="#">New</NavLink>
           </NavItem>
@@ -30,30 +59,15 @@ const MainCard = (props) => {
           </NavItem>
         </Nav>
         <CardBody style={style.inputContainer}>
-          <UncontrolledDropdown>
-            <DropdownToggle style={style.inputButton} caret>
-              Origin 
-            </DropdownToggle>
-            <DropdownMenu>
-                <DropdownItem>Lebak Bulus</DropdownItem>
-                <DropdownItem>Fatmawati</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
+          <Input style={style.inputForm} placeholder="From" Type="text"></Input>
           <br></br>
-          <UncontrolledDropdown>
-            <DropdownToggle style={style.inputButton} caret>
-              Destination 
-            </DropdownToggle>
-            <DropdownMenu>
-                <DropdownItem>Bundaran Hotel Indonesia</DropdownItem>
-                <DropdownItem>Dukuh Atas</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
+          <Input style={style.inputForm} placeholder="To" Type="text"></Input>
           <br></br>
           <CardText>Search for train leaving now</CardText>
           <Button style={style.inputButton} color="primary">Plan my journey</Button>
         </CardBody>
       </Card>
+    </div>
       <Card>
         <CardImg bottom width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
         <CardBody>
