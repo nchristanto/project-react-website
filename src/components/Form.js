@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardBody, CardText } from 'reactstrap';
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
-import { Nav, NavItem, NavLink } from 'reactstrap';
+// import { Card, Button, CardHeader, CardBody, CardText } from 'reactstrap';
+// import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+// import { Nav, NavItem, NavLink } from 'reactstrap';
 // import { url } from 'inspector';
 import cover from "./images/trainspeed.jpg"
 

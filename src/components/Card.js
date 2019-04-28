@@ -1,19 +1,21 @@
 import React from 'react';
 import { Button, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem , Card, CardBody, CardHeader, CardTitle, CardText, CardImg } from 'reactstrap';
-import { ListGroup, ListGroupItem } from 'reactstrap';
+// import { ListGroup, ListGroupItem } from 'reactstrap';
 
 const style = {
   cardContainer: {
   display: "flex", 
   justifyContent: "space-around",
-  padding: "20px 20px",
+  padding: "40px 40px"
+  },
+  formContainer: {
+    width: "275px",
   }
 }
 
 const MainCard = (props) => {
   return (
-    <div style={style.cardContainer}>
-    <div style={style.coverImage}>
+  <div style={style.cardContainer}>
       <Card style={style.formContainer} className="DropDownContainer">
         <CardHeader><center><h5>Plan a journey</h5></center></CardHeader>
         <Nav tabs>
@@ -51,17 +53,7 @@ const MainCard = (props) => {
           <CardText>Search for train leaving now</CardText>
           <Button style={style.inputButton} color="primary">Plan my journey</Button>
         </CardBody>
-        </Card>
-      </div>
-      {/* <h6>Lebak Bulus Route to Bundaran HI </h6>
-      <h6>Bundaran HI to Lebak Bulus</h6>
-        <ListGroup>
-          <ListGroupItem active tag="button" action>Cras justo odio</ListGroupItem>
-          <ListGroupItem tag="button" action>Dapibus ac facilisis in</ListGroupItem>
-          <ListGroupItem tag="button" action>Morbi leo risus</ListGroupItem>
-          <ListGroupItem tag="button" action>Porta ac consectetur ac</ListGroupItem>
-          <ListGroupItem disabled tag="button" action>Vestibulum at eros</ListGroupItem>
-        </ListGroup> */}
+      </Card>
       <Card>
         <CardImg bottom width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
         <CardBody>

@@ -1,5 +1,5 @@
 import React from 'react';
-import  NavigationBar  from './components/NavigationBar'
+import NavigationBar  from './components/NavigationBar'
 import CardDropDown from './components/Form'
 import MainCard from './components/Card'
 import SecondCard from './components/SecondCard'
